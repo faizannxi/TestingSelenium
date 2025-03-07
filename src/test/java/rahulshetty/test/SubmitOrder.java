@@ -41,6 +41,7 @@ public class SubmitOrder extends BaseTest {
 		pc.addProductToCart(productName);
 		js.executeScript("window.scrollTo(0, 0)");
 		CartPage cp = pc.goToCartPage();
+		//HEllo there
 		boolean match = cp.VerifyProductDisplay(productName);
 		Assert.assertTrue(match, "Product not found in cart!");
 		js.executeScript("window.scrollBy(0,300)");
